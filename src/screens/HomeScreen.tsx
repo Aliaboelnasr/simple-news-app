@@ -3,6 +3,8 @@ import {
   StyleSheet,
   StatusBar,
   SafeAreaView,
+  View,
+  Text,
 } from 'react-native';
 import { Article } from '../types/news';
 import newsService from '../services/newsService';
@@ -94,8 +96,14 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#fff" />
+      <StatusBar barStyle="dark-content" backgroundColor="#007AFF" />
       
+      {/* Header Section */}
+      <View style={styles.header}>
+        <Text style={styles.headerTitle}>📰 News Feed</Text>
+        <Text style={styles.headerSubtitle}>Stay informed with the latest headlines</Text>
+      </View>
+
       {/* Search Bar */}
       <SearchBar onSearch={handleSearch} />
 
@@ -115,6 +123,28 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f5f5f5',
+  },
+  header: {
+    backgroundColor: '#007AFF',
+    paddingVertical: 20,
+    paddingHorizontal: 20,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  headerTitle: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginBottom: 4,
+  },
+  headerSubtitle: {
+    fontSize: 14,
+    color: '#e8f4ff',
+    fontWeight: '500',
   },
 });
 

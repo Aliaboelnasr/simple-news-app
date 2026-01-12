@@ -85,48 +85,49 @@ const NewsList: React.FC<NewsListProps> = ({
 
 const styles = StyleSheet.create({
   listContent: {
-    padding: 15,
+    padding: 16,
   },
   centerContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 20,
+    padding: 24,
   },
   loadingText: {
-    marginTop: 10,
-    fontSize: 16,
-    color: '#666',
+    marginTop: 12,
+    fontSize: 17,
+    color: '#555',
+    fontWeight: '500',
   },
   errorIcon: {
-    fontSize: 48,
-    marginBottom: 15,
+    fontSize: 54,
+    marginBottom: 16,
   },
   errorText: {
-    fontSize: 16,
+    fontSize: 17,
     color: '#d32f2f',
     textAlign: 'center',
-    marginBottom: 8,
-    fontWeight: '600',
+    marginBottom: 10,
+    fontWeight: '700',
   },
   errorHint: {
-    fontSize: 14,
-    color: '#999',
+    fontSize: 15,
+    color: '#888',
     textAlign: 'center',
   },
   emptyIcon: {
-    fontSize: 48,
-    marginBottom: 15,
+    fontSize: 54,
+    marginBottom: 16,
   },
   emptyText: {
-    fontSize: 18,
-    color: '#666',
-    marginBottom: 8,
-    fontWeight: '600',
+    fontSize: 19,
+    color: '#555',
+    marginBottom: 10,
+    fontWeight: '700',
   },
   emptyHint: {
-    fontSize: 14,
-    color: '#999',
+    fontSize: 15,
+    color: '#888',
   },
 });
 
