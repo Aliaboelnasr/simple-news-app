@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 // Silence warnings
 global.console = {
   ...console,
